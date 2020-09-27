@@ -1,0 +1,45 @@
+.contacts {
+  text-align-last: left;
+}
+
+.contacts__item {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  margin-bottom: 10px;
+
+  font-size: 14px;
+  line-height: 16px;
+  color: inherit;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+a.contacts__item {
+  &:hover,
+  &:focus {
+    color: #e18686;
+
+    .contacts__icon {
+      fill: #e18686;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.contacts__icon {
+  margin-right: 5px;
+
+  fill: #ffffff;
+}
+
+@media (min-width: 768px) {
+  .contacts__icon {
+    margin-right: 10px;
+  }
+}
