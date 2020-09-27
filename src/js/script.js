@@ -1,8 +1,10 @@
-const mainNav = document.querySelector('.main-nav');
-const navStartPosition = mainNav.offsetTop;
-const navControlBtn = mainNav.querySelector('.main-nav__control');
-const ancors = document.querySelectorAll('a[href*="#"]');
-const toTopBtn = document.querySelector('.to-top-btn');
+'use strict';
+
+var mainNav = document.querySelector('.main-nav');
+var navStartPosition = mainNav.offsetTop;
+var navControlBtn = mainNav.querySelector('.main-nav__control');
+var ancors = document.querySelectorAll('a[href*="#"]');
+var toTopBtn = document.querySelector('.to-top-btn');
 
 mainNav.classList.add('main-nav--closed');
 
@@ -16,7 +18,7 @@ function toggleMenu() {
 
 function onWindowScroll() {
   if (window.pageYOffset >= navStartPosition) {
-    mainNav.classList.add('main-nav--fixed')
+    mainNav.classList.add('main-nav--fixed');
   } else {
     mainNav.classList.remove('main-nav--fixed');
   }
@@ -35,15 +37,19 @@ navControlBtn.addEventListener('click', function (evt) {
   toggleMenu();
 });
 
-for (let ancor of ancors) {
+function setSmoothScroll(ancor) {
   ancor.addEventListener('click', function (evt) {
     evt.preventDefault();
 
-    const targetId = ancor.getAttribute('href').substr(1);
+    var targetId = ancor.getAttribute('href').substr(1);
 
     document.querySelector('#' + targetId).scrollIntoView({
       behavior: 'smooth',
       block: 'start'
     });
   });
-};
+}
+
+for (var i = 0; i < ancors.length; i++) {
+  setSmoothScroll(ancors[i]);
+}
