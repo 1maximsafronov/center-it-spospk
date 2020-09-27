@@ -1,5 +1,16 @@
 .contacts {
-  text-align-last: left;
+  text-align: right;
+
+  &--in-footer {
+    text-align: left;
+
+    .contacts__icon {
+      order: -1;
+      margin-right: 5px;
+
+      fill: #ffffff;
+    }
+  }
 }
 
 .contacts__item {
@@ -33,13 +44,23 @@ a.contacts__item {
 }
 
 .contacts__icon {
-  margin-right: 5px;
+  flex-shrink: 0;
+  order: 1;
+  margin-left: 5px;
 
-  fill: #ffffff;
+  fill: #263042;
 }
 
 @media (min-width: 768px) {
+  .contacts {
+    &--in-footer {
+      .contacts__icon {
+        margin-right: 10px;
+      }
+    }
+  }
+
   .contacts__icon {
-    margin-right: 10px;
+    margin-left: 10px;
   }
 }

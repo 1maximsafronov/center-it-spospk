@@ -13,42 +13,58 @@
 
 <body>
   <header class="page-header">
-    <div class="page-header__top-section">
+    <div class="page-header__top-section container">
       <div class="page-header__logo logo">
-        <img src="img/placeholder.jpg" alt="ЦЕНТР РАЗВИТИЯ КОМПЕТЕНЦИЙ В ОБЛАСТИ ИТ">
+        <img src="img/logo.jpg" alt="Центр развития компетенций в области Информационных технологий" width="160"
+          height="135">
       </div>
       <div class="page-header__info">
         <h1 class="page-header__title">
-          ЦЕНТР РАЗВИТИЯ КОМПЕТЕНЦИЙ В ОБЛАСТИ ИТ
+          Центр развития компетенций в&nbsp;области&nbsp;ИТ
         </h1>
         <p class="page-header__desc">
           Областное государственное бюджетное профессиональное образовательное учреждение «Северский промышленный
           колледж»
         </p>
       </div>
-      <p class="page-header__contacts contacts">
-        <a class="contacts__email" href="mailto:centrit@spospk.ru">
-          centrit@spospk.ru
+      <div class="page-header__contacts contacts">
+        <a class="contacts__item" href="mailto:centrit@spospk.ru">
+          <svg class="contacts__icon" width="20" height="20" xmlns="http://www.w3.org/2000/svg" fill="#ffffff"
+            viewBox="0 0 20 20">
+            <path
+              d="M16.563 3.125H3.438A2.19 2.19 0 001.25 5.313v9.375a2.19 2.19 0 002.188 2.187h13.124a2.19 2.19 0 002.188-2.188V5.313a2.19 2.19 0 00-2.188-2.188zm-.554 3.618l-5.625 4.375a.625.625 0 01-.768 0L3.991 6.743a.625.625 0 11.768-.986L10 9.833l5.241-4.076a.625.625 0 01.768.986z" />
+          </svg>
+          <span>centrit@spospk.ru</span>
         </a>
-        <a class="contacts__phone" href="tel:+73823780379">
-          +7(3823)780-379
-        </a><br>
-        <a class="contacts__address" href="https://yandex.ru/maps/-/CCQ3mGspCC" target="_blank">
-          г.Северск<br>
-          ул.Строителей 25<br>
-          каб. 317
-        </a><br>
-        <span class="contacts__work-time">Время работы: ПН-ВС с 08:00 до 21:00</span>
-      </p>
+        <a class="contacts__item" href="tel:+73823780379">
+          <svg class="contacts__icon" xmlns="http://www.w3.org/2000/svg" fill="#ffffff" viewBox="0 0 20 20" width="20"
+            height="20">
+            <path
+              d="M15.273 18.75c-.762 0-1.833-.276-3.437-1.172-1.95-1.093-3.46-2.103-5.399-4.038-1.87-1.87-2.78-3.08-4.054-5.397-1.44-2.617-1.194-3.99-.92-4.576.327-.7.809-1.12 1.432-1.536.354-.231.728-.43 1.119-.593l.107-.048c.194-.087.487-.218.858-.078.248.093.469.283.815.625.71.7 1.68 2.26 2.037 3.025.24.516.4.856.4 1.239 0 .447-.225.792-.498 1.164-.051.07-.102.137-.151.202-.298.39-.363.503-.32.705.087.405.737 1.61 1.804 2.676 1.068 1.065 2.239 1.674 2.646 1.76.21.045.325-.023.728-.33.058-.045.117-.09.18-.136.416-.31.745-.529 1.182-.529h.002c.38 0 .705.165 1.244.437.704.354 2.31 1.312 3.014 2.022.342.346.533.566.627.813.14.373.008.664-.079.86l-.047.107c-.164.39-.364.763-.597 1.117-.415.62-.836 1.101-1.538 1.428-.361.171-.756.257-1.155.253z" />
+          </svg>
+          <span>+7&nbsp;(3823)&nbsp;780-379</span>
+        </a>
+        <a class="contacts__item" href="https://yandex.ru/maps/-/CCQ3mGspCC" target="_blank">
+          <svg class="contacts__icon" xmlns="http://www.w3.org/2000/svg" fill="#ffffff" viewBox="0 0 20 20" width="20"
+            height="20">
+            <path d="M10 8.75a1.25 1.25 0 100-2.5 1.25 1.25 0 000 2.5z" />
+            <path
+              d="M10 1.25c-3.446 0-6.25 2.682-6.25 5.977 0 1.569.715 3.655 2.126 6.202C7.009 15.473 8.319 17.322 9 18.242a1.24 1.24 0 002 0c.681-.92 1.993-2.769 3.126-4.813 1.408-2.546 2.123-4.633 2.123-6.202 0-3.295-2.804-5.977-6.25-5.977zM10 10a2.5 2.5 0 110-5 2.5 2.5 0 010 5z" />
+          </svg>
+          <span>г.Северск, ул.Строителей&nbsp;25, каб.&nbsp;317</span>
+        </a>
+      </div>
     </div>
     <nav class="page-header__nav main-nav">
-      <div class="main-nav__wrapper">
-        <div class="main-nav__logo">
-          <img src="#" alt="Логотип мастерской">
+      <div class="main-nav__wrapper container">
+        <div class="main-nav__head">
+          <div class="main-nav__logo">
+            <img src="img/logo-master.png" alt="Логотип мастерской">
+          </div>
+          <button class="main-nav__control">
+            <span class="visually-hidden">Открыть/Закрыть меню</span>
+          </button>
         </div>
-        <button class="main-nav__control">
-          <span class="visually-hidden">Открыть/Закрыть меню</span>
-        </button>
         <ul class="main-nav__site-nav site-nav">
           <li class="site-nav__item">
             <a class="site-nav__link" href="#">Сайт СПК</a>
@@ -379,7 +395,7 @@
             <path
               d="M15.273 18.75c-.762 0-1.833-.276-3.437-1.172-1.95-1.093-3.46-2.103-5.399-4.038-1.87-1.87-2.78-3.08-4.054-5.397-1.44-2.617-1.194-3.99-.92-4.576.327-.7.809-1.12 1.432-1.536.354-.231.728-.43 1.119-.593l.107-.048c.194-.087.487-.218.858-.078.248.093.469.283.815.625.71.7 1.68 2.26 2.037 3.025.24.516.4.856.4 1.239 0 .447-.225.792-.498 1.164-.051.07-.102.137-.151.202-.298.39-.363.503-.32.705.087.405.737 1.61 1.804 2.676 1.068 1.065 2.239 1.674 2.646 1.76.21.045.325-.023.728-.33.058-.045.117-.09.18-.136.416-.31.745-.529 1.182-.529h.002c.38 0 .705.165 1.244.437.704.354 2.31 1.312 3.014 2.022.342.346.533.566.627.813.14.373.008.664-.079.86l-.047.107c-.164.39-.364.763-.597 1.117-.415.62-.836 1.101-1.538 1.428-.361.171-.756.257-1.155.253z" />
           </svg>
-          <span></span>+7 (3823) 780-379
+          <span>+7&nbsp;(3823)&nbsp;780-379</span>
         </a>
         <a class="contacts__item" href="https://yandex.ru/maps/-/CCQ3mGspCC" target="_blank">
           <svg class="contacts__icon" xmlns="http://www.w3.org/2000/svg" fill="#ffffff" viewBox="0 0 20 20" width="20"
@@ -388,7 +404,7 @@
             <path
               d="M10 1.25c-3.446 0-6.25 2.682-6.25 5.977 0 1.569.715 3.655 2.126 6.202C7.009 15.473 8.319 17.322 9 18.242a1.24 1.24 0 002 0c.681-.92 1.993-2.769 3.126-4.813 1.408-2.546 2.123-4.633 2.123-6.202 0-3.295-2.804-5.977-6.25-5.977zM10 10a2.5 2.5 0 110-5 2.5 2.5 0 010 5z" />
           </svg>
-          <span>г.Северск, ул.Строителей 25, каб. 317</span>
+          <span>г.Северск, ул.Строителей&nbsp;25, каб.&nbsp;317</span>
         </a>
         <p class="contacts__item">
           <svg class="contacts__icon" xmlns="http://www.w3.org/2000/svg" fill="#ffffff" viewBox="0 0 20 20" width="20"
