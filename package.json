@@ -1,6 +1,6 @@
 {
   "name": "center-it-spospk",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "private": true,
   "description": "Center IT spospk.ru",
   "author": "1maximsafronov",
@@ -11,6 +11,7 @@
     "del": "6.0.0",
     "eslint": "7.10.0",
     "eslint-config-htmlacademy": "0.6.0",
+    "gh-pages": "3.1.0",
     "gulp": "4.0.2",
     "gulp-csso": "4.0.1",
     "gulp-htmlmin": "5.0.1",
@@ -35,7 +36,8 @@
     "eslint": "eslint src/js/**/*.js",
     "test": "npm run editorconfig && npm run stylelint && npm run eslint",
     "build": "gulp build",
-    "start": "gulp start"
+    "start": "gulp start",
+    "publish": "gulp publish"
   },
   "browserslist": [
     "last 2 versions",
