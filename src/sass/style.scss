@@ -1,25 +1,6 @@
 @import "normalize";
-
-html {
-  box-sizing: border-box;
-  min-width: 320px;
-}
-
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-}
-
-body {
-  font-size: 14px;
-  line-height: 16px;
-  font-family: "Roboto", "Arial", sans-serif;
-  color: #263042;
-
-  background: #ffffff;
-}
-
-img {
-  max-width: 100%;
-}
+@import "blocks/global.scss";
+@import "blocks/visually-hidden.scss";
+@import "blocks/container.scss";
+@import "blocks/workshops.scss";
+@import "blocks/workshop.scss";
