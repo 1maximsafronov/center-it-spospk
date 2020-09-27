@@ -18,6 +18,7 @@
     position: absolute;
     top: 50%;
     right: 0;
+    z-index: 0;
 
     width: 120px;
     height: 120px;
@@ -74,6 +75,9 @@
 }
 
 .workshop__link {
+  position: relative;
+  z-index: 1;
+
   display: flex;
   align-items: center;
   width: 100%;

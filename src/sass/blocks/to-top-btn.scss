@@ -1,0 +1,16 @@
+.to-top-btn {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+
+  display: none;
+  width: 40px;
+  height: 40px;
+
+  background-image: url("../img/arrow-up.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+  border-radius: 50%;
+  opacity: 0.5;
+}

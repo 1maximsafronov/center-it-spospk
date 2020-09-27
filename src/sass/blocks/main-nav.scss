@@ -13,6 +13,16 @@
       display: none;
     }
   }
+
+  &--fixed {
+    position: fixed;
+    top: 0;
+    z-index: 10;
+
+    width: 100%;
+
+    transition-duration: 0.9s;
+  }
 }
 
 .main-nav__wrapper {
@@ -52,6 +62,7 @@
   background-repeat: no-repeat;
   background-position: 50% 50%;
   border: none;
+  cursor: pointer;
 }
 
 @media (min-width: 768px) {

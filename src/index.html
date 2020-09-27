@@ -12,7 +12,7 @@
 </head>
 
 <body>
-  <header class="page-header">
+  <header class="page-header" id="page-header">
     <div class="page-header__top-section container">
       <div class="page-header__logo logo">
         <img src="img/logo.jpg" alt="Центр развития компетенций в области Информационных технологий" width="160"
@@ -55,13 +55,13 @@
         </a>
       </div>
     </div>
-    <nav class="page-header__nav main-nav main-nav--closed">
+    <nav class="page-header__nav main-nav">
       <div class="main-nav__wrapper container">
         <div class="main-nav__head">
           <div class="main-nav__logo">
             <img src="img/logo-master.png" alt="Логотип мастерской">
           </div>
-          <button class="main-nav__control">
+          <button class="main-nav__control" type="button">
             <span class="visually-hidden">Открыть/Закрыть меню</span>
           </button>
         </div>
@@ -93,28 +93,28 @@
           <h2 class="workshops__title">Мастерские центра</h2>
           <ul class="workshops__list">
             <li class="workshops__item workshop workshop--mobile-dev">
-              <a class="workshop__link" href="">
+              <a class="workshop__link" href="#section-mobile-dev">
                 <h3 class="workshop__title">Разработка мобильных приложений</h3>
               </a>
             </li>
             <li class="workshops__item workshop workshop--1c-dev">
-              <a class="workshop__link" href="">
+              <a class="workshop__link" href="#section-1c-dev">
                 <h3 class="workshop__title">ИТ-решения для бизнеса на платформе
                   &laquo;1С: Предприятие 8&raquo;</h3>
               </a>
             </li>
             <li class="workshops__item workshop workshop--game-dev">
-              <a class="workshop__link" href="">
+              <a class="workshop__link" href="#section-game-dev">
                 <h3 class="workshop__title">Разработка компьютерных игр и мультимедийных приложений</h3>
               </a>
             </li>
             <li class="workshops__item workshop workshop--web-dev">
-              <a class="workshop__link" href="">
+              <a class="workshop__link" href="#section-web-dev">
                 <h3 class="workshop__title">Веб-дизайн и разработка</h3>
               </a>
             </li>
             <li class="workshops__item workshop workshop--buisnes-dev">
-              <a class="workshop__link" href="">
+              <a class="workshop__link" href="#section-buisnes-dev">
                 <h3 class="workshop__title">Программные решения для бизнеса</h3>
               </a>
             </li>
@@ -195,7 +195,7 @@
         </ul>
       </div>
     </section>
-    <section class="article article--mobile-dev">
+    <section class="article article--mobile-dev" id="section-mobile-dev">
       <div class="article__wrapper container">
         <h2 class="article__title">Разработка мобильных приложений</h2>
         <div class="article__picture">
@@ -247,7 +247,7 @@
         </div>
       </div>
     </section>
-    <section class="article article--1c-dev">
+    <section class="article article--1c-dev" id="section-1c-dev">
       <div class="article__wrapper container">
         <h2 class="article__title">ИТ-решения для бизнеса на платформе &laquo;1С: Предприятие 8&raquo;</h2>
         <div class="article__picture">
@@ -281,7 +281,7 @@
         </div>
       </div>
     </section>
-    <section class="article article--game-dev">
+    <section class="article article--game-dev" id="section-game-dev">
       <div class="article__wrapper container">
         <h2 class="article__title">Разработка компьютерных игр и мультимедийных приложений</h2>
         <div class="article__picture">
@@ -316,7 +316,7 @@
         </div>
       </div>
     </section>
-    <section class="article article--web-dev">
+    <section class="article article--web-dev" id="section-web-dev">
       <div class="article__wrapper container">
         <h2 class="article__title">Веб-дизайн и разработка</h2>
         <div class="article__picture">
@@ -342,7 +342,7 @@
         </div>
       </div>
     </section>
-    <section class="article article--buisnes-dev">
+    <section class="article article--buisnes-dev" id="section-buisnes-dev">
       <div class="article__wrapper container">
         <h2 class="article__title">Программные решения для бизнеса</h2>
         <div class="article__picture">
@@ -477,7 +477,10 @@
       </div>
     </div>
   </footer>
-  <script src="js/script.min.js"></script>
+  <a class="to-top-btn" href="#page-header">
+    <span class="visually-hidden">На верх</span>
+  </a>
+  <script src="js/script.js"></script>
 </body>
 
 </html>
