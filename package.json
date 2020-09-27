@@ -46,7 +46,7 @@
     "*.json",
     "*.js",
     "src/*.html",
-    "src/js/**/*.js",
+    "src/js/**/script.js",
     "src/img/**/*.svg",
     "src/sass/**/*.{sass,scss}"
   ]
