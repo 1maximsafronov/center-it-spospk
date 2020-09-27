@@ -3,6 +3,16 @@
 
   background: #263042;
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+
+  &--closed {
+    .main-nav__control {
+      background-image: url("../img/burger.svg");
+    }
+
+    .main-nav__site-nav {
+      display: none;
+    }
+  }
 }
 
 .main-nav__wrapper {
@@ -38,14 +48,10 @@
   height: 20px;
 
   background-color: transparent;
-  background-image: url("../img/burger.svg");
+  background-image: url("../img/close-burger.svg");
   background-repeat: no-repeat;
   background-position: 50% 50%;
   border: none;
-
-  &--opened {
-    background-image: url("../img/close-burger.svg");
-  }
 }
 
 @media (min-width: 768px) {
@@ -57,6 +63,14 @@
 
 
 @media (min-width: 1140px) {
+  .main-nav {
+    &--closed {
+      .main-nav__site-nav {
+        display: flex;
+      }
+    }
+  }
+
   .main-nav__wrapper {
     position: relative;
 
