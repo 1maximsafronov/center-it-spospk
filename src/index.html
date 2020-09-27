@@ -4,14 +4,529 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Центр развития компетенций в области Информационных технологий</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,700&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="css/style.min.css">
+  <script src="js/picturefill.min.js"></script>
 </head>
 
 <body>
-  <h1>Hello WORLD!</h1>
+  <header class="page-header" id="page-header">
+    <div class="page-header__top-section container">
+      <div class="page-header__logo logo">
+        <img src="img/logo.jpg" alt="Центр развития компетенций в области Информационных технологий" width="160"
+          height="135">
+      </div>
+      <div class="page-header__info">
+        <h1 class="page-header__title">
+          Центр развития компетенций в&nbsp;области&nbsp;ИТ
+        </h1>
+        <p class="page-header__desc">
+          Областное государственное бюджетное профессиональное образовательное учреждение «Северский промышленный
+          колледж»
+        </p>
+      </div>
+      <div class="page-header__contacts contacts">
+        <a class="contacts__item" href="mailto:centrit@spospk.ru">
+          <svg class="contacts__icon" width="20" height="20" xmlns="http://www.w3.org/2000/svg" fill="#ffffff"
+            viewBox="0 0 20 20">
+            <path
+              d="M16.563 3.125H3.438A2.19 2.19 0 001.25 5.313v9.375a2.19 2.19 0 002.188 2.187h13.124a2.19 2.19 0 002.188-2.188V5.313a2.19 2.19 0 00-2.188-2.188zm-.554 3.618l-5.625 4.375a.625.625 0 01-.768 0L3.991 6.743a.625.625 0 11.768-.986L10 9.833l5.241-4.076a.625.625 0 01.768.986z" />
+          </svg>
+          <span>centrit@spospk.ru</span>
+        </a>
+        <a class="contacts__item" href="tel:+73823780379">
+          <svg class="contacts__icon" xmlns="http://www.w3.org/2000/svg" fill="#ffffff" viewBox="0 0 20 20" width="20"
+            height="20">
+            <path
+              d="M15.273 18.75c-.762 0-1.833-.276-3.437-1.172-1.95-1.093-3.46-2.103-5.399-4.038-1.87-1.87-2.78-3.08-4.054-5.397-1.44-2.617-1.194-3.99-.92-4.576.327-.7.809-1.12 1.432-1.536.354-.231.728-.43 1.119-.593l.107-.048c.194-.087.487-.218.858-.078.248.093.469.283.815.625.71.7 1.68 2.26 2.037 3.025.24.516.4.856.4 1.239 0 .447-.225.792-.498 1.164-.051.07-.102.137-.151.202-.298.39-.363.503-.32.705.087.405.737 1.61 1.804 2.676 1.068 1.065 2.239 1.674 2.646 1.76.21.045.325-.023.728-.33.058-.045.117-.09.18-.136.416-.31.745-.529 1.182-.529h.002c.38 0 .705.165 1.244.437.704.354 2.31 1.312 3.014 2.022.342.346.533.566.627.813.14.373.008.664-.079.86l-.047.107c-.164.39-.364.763-.597 1.117-.415.62-.836 1.101-1.538 1.428-.361.171-.756.257-1.155.253z" />
+          </svg>
+          <span>+7&nbsp;(3823)&nbsp;780-379</span>
+        </a>
+        <a class="contacts__item" href="https://yandex.ru/maps/-/CCQ3mGspCC" target="_blank">
+          <svg class="contacts__icon" xmlns="http://www.w3.org/2000/svg" fill="#ffffff" viewBox="0 0 20 20" width="20"
+            height="20">
+            <path d="M10 8.75a1.25 1.25 0 100-2.5 1.25 1.25 0 000 2.5z" />
+            <path
+              d="M10 1.25c-3.446 0-6.25 2.682-6.25 5.977 0 1.569.715 3.655 2.126 6.202C7.009 15.473 8.319 17.322 9 18.242a1.24 1.24 0 002 0c.681-.92 1.993-2.769 3.126-4.813 1.408-2.546 2.123-4.633 2.123-6.202 0-3.295-2.804-5.977-6.25-5.977zM10 10a2.5 2.5 0 110-5 2.5 2.5 0 010 5z" />
+          </svg>
+          <span>г.Северск, ул.Строителей&nbsp;25, каб.&nbsp;317</span>
+        </a>
+      </div>
+    </div>
+    <nav class="page-header__nav main-nav">
+      <div class="main-nav__wrapper container">
+        <div class="main-nav__head">
+          <div class="main-nav__logo">
+            <img src="img/logo-master.png" alt="Логотип мастерской">
+          </div>
+          <button class="main-nav__control" type="button">
+            <span class="visually-hidden">Открыть/Закрыть меню</span>
+          </button>
+        </div>
+        <ul class="main-nav__site-nav site-nav">
+          <li class="site-nav__item">
+            <a class="site-nav__link" href="http://spospk.ru/" target="_blank">Сайт СПК</a>
+          </li>
+          <li class="site-nav__item">
+            <a class="site-nav__link" href="https://moodle.itspk.ru/" target="_blank">СДО Moodle СПК</a>
+          </li>
+          <li class="site-nav__item">
+            <a class="site-nav__link" href="https://webinar.spospk.tom.ru/" target="_blank">Система веб-конференций
+              СПК</a>
+          </li>
+          <li class="site-nav__item">
+            <a class="site-nav__link" href="https://cloud.itspk.ru/" target="_blank">Облачное файловое хранилище</a>
+          </li>
+          <li class="site-nav__item">
+            <a class="site-nav__link" href="http://centrit.spospk.ru/data/rasp.xlsx" target="_blank">Расписание</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section class="workshops">
+      <div class="workshops__overlay">
+        <div class="workshops__wrapper container">
+          <h2 class="workshops__title">Мастерские центра</h2>
+          <ul class="workshops__list">
+            <li class="workshops__item workshop workshop--mobile-dev">
+              <a class="workshop__link" href="#section-mobile-dev">
+                <h3 class="workshop__title">Разработка мобильных приложений</h3>
+              </a>
+            </li>
+            <li class="workshops__item workshop workshop--1c-dev">
+              <a class="workshop__link" href="#section-1c-dev">
+                <h3 class="workshop__title">ИТ-решения для бизнеса на платформе
+                  &laquo;1С: Предприятие 8&raquo;</h3>
+              </a>
+            </li>
+            <li class="workshops__item workshop workshop--game-dev">
+              <a class="workshop__link" href="#section-game-dev">
+                <h3 class="workshop__title">Разработка компьютерных игр и мультимедийных приложений</h3>
+              </a>
+            </li>
+            <li class="workshops__item workshop workshop--web-dev">
+              <a class="workshop__link" href="#section-web-dev">
+                <h3 class="workshop__title">Веб-дизайн и разработка</h3>
+              </a>
+            </li>
+            <li class="workshops__item workshop workshop--buisnes-dev">
+              <a class="workshop__link" href="#section-buisnes-dev">
+                <h3 class="workshop__title">Программные решения для бизнеса</h3>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="news">
+      <div class="news__wrapper container">
+        <h2 class="news__title">Новости</h2>
+        <ul class="news__list">
+          <li class="news__item item-news">
+            <a class="item-news__link" href="http://spospk.ru/1969-rannyaya-proforientaciya.html" target="_blank">
+              <div class="item-news__picture">
+                <img src="img/photo-1.jpg" alt="Ранняя профориентация">
+              </div>
+              <div class="item-news__content">
+                <h3 class="item-news__title">Ранняя профориентация</h3>
+                <time class="item-news__date" datetime="2020-03-16">16 марта 2020</time>
+              </div>
+            </a>
+          </li>
+          <li class="news__item item-news">
+            <a class="item-news__link" href="http://spospk.ru/1967-dopolnitelnoe-obrazovanie.html" target="_blank">
+              <div class="item-news__picture">
+                <img src="img/photo-2.jpg" alt="Дополнительное образование">
+              </div>
+              <div class="item-news__content">
+                <h3 class="item-news__title">Дополнительное образование</h3>
+                <time class="item-news__date" datetime="2020-03-12">12 марта 2020</time>
+              </div>
+            </a>
+          </li>
+          <li class="news__item item-news">
+            <a class="item-news__link" href="http://spospk.ru/1963-obrazovatelnyy-proekt.html" target="_blank">
+              <div class="item-news__picture">
+                <img src="img/photo-5.jpg" alt="Образовательный проект">
+              </div>
+              <div class="item-news__content">
+                <h3 class="item-news__title">Образовательный проект</h3>
+                <time class="item-news__date" datetime="2020-03-10">10 марта 2020</time>
+              </div>
+            </a>
+          </li>
+          <li class="news__item item-news">
+            <a class="item-news__link" href="http://spospk.ru/1926-obrazovatelnyy-proekt.html" target="_blank">
+              <div class="item-news__picture">
+                <img src="img/photo-4.jpg" alt="Образовательный проект">
+              </div>
+              <div class="item-news__content">
+                <h3 class="item-news__title">Образовательный проект</h3>
+                <time class="item-news__date" datetime="2020-01-28">28 января 2020</time>
+              </div>
+            </a>
+          </li>
+          <li class="news__item item-news">
+            <a class="item-news__link" href="http://spospk.ru/1892-praktikum-dlya-ao-sibkabel.html" target="_blank">
+              <div class="item-news__picture">
+                <img src="img/photo-3.jpg" alt="Практикум для &laquo;АО Сибкабель&raquo;">
+              </div>
+              <div class="item-news__content">
+                <h3 class="item-news__title">Практикум для &laquo;АО Сибкабель&raquo;</h3>
+                <time class="item-news__date" datetime="2019-12-19">19 декабря 2019</time>
+              </div>
+            </a>
+          </li>
+          <li class="news__item item-news">
+            <a class="item-news__link" href="http://spospk.ru/1882-razgovor-s-nastavnikom.html" target="_blank">
+              <div class="item-news__picture">
+                <img src="img/photo-6.jpg" alt="Разговор с наставником">
+              </div>
+              <div class="item-news__content">
+                <h3 class="item-news__title">Разговор с наставником</h3>
+                <time class="item-news__date" datetime="2019-12-17">17 декабря 2019</time>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="article article--mobile-dev" id="section-mobile-dev">
+      <div class="article__wrapper container">
+        <h2 class="article__title">Разработка мобильных приложений</h2>
+        <div class="article__picture">
+          <picture>
+            <source type="image/webp" srcset="img/photos/KUZ_1291@1x.webp 1x, img/photos/KUZ_1291@2x.webp 2x"
+              media="(min-width: 768px)">
+            <source type="image/webp"
+              srcset="img/photos/KUZ_1291-mobile@1x.webp 1x, img/photos/KUZ_1291-mobile@2x.webp 2x">
 
-  <script src="js/script.min.js"></script>
+            <source srcset="img/photos/KUZ_1291@1x.jpg 1x, img/photos/KUZ_1291@2x.jpg 2x" media="(min-width: 768px)">
+            <img src="img/photos/KUZ_1291-mobile@1x.jpg" srcset="img/photos/KUZ_1291-mobile@2x.jpg 2x"
+              alt="Разработка мобильных приложений">
+          </picture>
+        </div>
+        <div class="article__content">
+          <p class="article__text">
+            Основная задача, которую будут решать студенты с использованием программного обеспечения данной мастерской –
+            создание
+            мобильных приложений, сочетающих в себе такие обязательные качества, как безотказная работа на одной из
+            мобильных
+            операционных платформ (Apple iOS, Google Android, Windows Phone), удобный пользовательский интерфейс, и
+            многофункциональность.
+          </p>
+          <p class="article__text">
+            Оснащение мастерской используется для развития следующих компетенций:
+          </p>
+          <ul class="article__list">
+            <li class="article__list-item">
+              Использования технологий для разработки мобильных приложений;
+            </li>
+            <li class="article__list-item">
+              Использования технологий для работы с базами данных;
+            </li>
+            <li class="article__list-item">
+              Использования технологий для работы с различными протоколами обмена данными;
+            </li>
+            <li class="article__list-item">
+              Строительство приложения со сложной логикой переходов;
+            </li>
+            <li class="article__list-item">
+              Работы со стандартными сервисами платформы (например: google services, apple);
+            </li>
+            <li class="article__list-item">
+              работы со встроенными устройствами для получения данных (гироскоп, GPS, акселерометр);
+            </li>
+            <li class="article__list-item">
+              планирования тестирования (например, тестирование элементов, объемное тестирование, комплексное
+              тестирование, приемочное
+              тестирование);
+            </li>
+            <li class="article__list-item">
+              отладки мобильного приложения и устранения ошибок;
+            </li>
+            <li class="article__list-item">
+              отчёта о процессе тестирования мобильных приложений.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="article article--1c-dev" id="section-1c-dev">
+      <div class="article__wrapper container">
+        <h2 class="article__title">ИТ-решения для бизнеса на платформе &laquo;1С: Предприятие 8&raquo;</h2>
+        <div class="article__picture">
+          <picture>
+            <source type="image/webp" srcset="img/photos/KUZ_1268@1x.webp 1x, img/photos/KUZ_1268@2x.webp 2x"
+              media="(min-width: 768px)">
+            <source type="image/webp"
+              srcset="img/photos/KUZ_1268-mobile@1x.webp 1x, img/photos/KUZ_1268-mobile@2x.webp 2x">
+
+            <source srcset="img/photos/KUZ_1268@1x.jpg 1x, img/photos/KUZ_1268@2x.jpg 2x" media="(min-width: 768px)">
+            <img src="img/photos/KUZ_1268-mobile@1x.jpg" srcset="img/photos/KUZ_1268-mobile@2x.jpg 2x"
+              alt="ИТ-решения для бизнеса на платформе &laquo;1С: Предприятие 8&raquo;">
+          </picture>
+        </div>
+        <div class="article__content">
+          <p class="article__text">В мастерской установлена информационно-техническая платформа &laquo;1С: Предприятие
+            8&raquo;,
+            которая позволяет разрабатывать на её
+            основе различные прикладные решения для бизнеса, включая решения ERP-класса.</p>
+          <p class="article__text">Оснащение мастерской используется для развития следующих компетенций:</p>
+          <ul class="article__list">
+            <li class="article__list-item">анализа и проектирования программных решений;</li>
+            <li class="article__list-item">использования последней версии среды и средств разработки технологической
+              платформы &laquo;1С:Предприятия 8&raquo;;</li>
+            <li class="article__list-item">определения и интегрирования требуемых библиотек в программное решение;</li>
+            <li class="article__list-item">настраивания регламентных процедур в СУБД, используемых для хранения данных
+              1С:Предприятия (Microsoft SQL Server,
+              PostgreSQL, IBM DB2 или Oracle Database);</li>
+            <li class="article__list-item">строительства многоуровневых приложений;</li>
+            <li class="article__list-item">создания прикладных решений;</li>
+            <li class="article__list-item">составления плана тестирования (например, модульное тестирование, объемное
+              тестирование, интеграционное
+              тестирование и
+              приемочные испытания);</li>
+            <li class="article__list-item">разработки тест-кейсов и проверки их результатов; устранения и исправления
+              ошибок; составления отчетов о
+              процессе
+              тестирования.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="article article--game-dev" id="section-game-dev">
+      <div class="article__wrapper container">
+        <h2 class="article__title">Разработка компьютерных игр и мультимедийных приложений</h2>
+        <div class="article__picture">
+          <picture>
+            <source type="image/webp" srcset="img/photos/KUZ_1220@1x.webp 1x, img/photos/KUZ_1220@2x.webp 2x"
+              media="(min-width: 768px)">
+            <source type="image/webp"
+              srcset="img/photos/KUZ_1220-mobile@1x.webp 1x, img/photos/KUZ_1220-mobile@2x.webp 2x">
+
+            <source srcset="img/photos/KUZ_1220@1x.jpg 1x, img/photos/KUZ_1220@2x.jpg 2x" media="(min-width: 768px)">
+            <img src="img/photos/KUZ_1220-mobile@1x.jpg" srcset="img/photos/KUZ_1220-mobile@2x.jpg 2x"
+              alt="Разработка компьютерных игр и мультимедийных приложений">
+          </picture>
+        </div>
+        <div class="article__content">
+          <p class="article__text">В мастерской студенты осваивают компетенцию создания компьютерных программ высокой
+            сложности, предназначенных для
+            обучения и развлечения пользователей. Проектирование игр, как программных систем, требует умений анализа
+            требований к
+            программной системе, навыков программирования, особенностей технических средств и сред разработки. Кроме
+            того,
+            реализация компьютерных игр требует знаний в области разработки алгоритмов, проектирования и разработки
+            интерактивных
+            приложений, двумерной и трехмерной компьютерной графики, кроссплатформенном программировании и т.д.</p>
+          <p class="article__text">Оснащение мастерской используется для развития следующих компетенций:</p>
+          <ul class="article__list">
+            <li class="article__list-item">работы с техническим описанием игры;</li>
+            <li class="article__list-item">использования имеющихся инструментов и возможностей платформе Unity;</li>
+            <li class="article__list-item">проектирования и строительства пользовательских интерфейсов для игровых
+              продуктов;</li>
+            <li class="article__list-item">программирования игровой механики и реализации игрового процесса согласно
+              технического описания игры;</li>
+            <li class="article__list-item">оформления кода и использования комментирование согласно общепринятым нормам;
+            </li>
+            <li class="article__list-item">выстраивания масштабируемой архитектуры проекта;</li>
+            <li class="article__list-item">проведения тестирования и отладке программных решений;
+            </li>
+            <li class="article__list-item">разработки функционирующего программного продукта для конечного пользователя.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="article article--web-dev" id="section-web-dev">
+      <div class="article__wrapper container">
+        <h2 class="article__title">Веб-дизайн и разработка</h2>
+        <div class="article__picture">
+          <picture>
+            <source type="image/webp" srcset="img/photos/KUZ_1300@1x.webp 1x, img/photos/KUZ_1300@2x.webp 2x"
+              media="(min-width: 768px)">
+            <source type="image/webp"
+              srcset="img/photos/KUZ_1300-mobile@1x.webp 1x, img/photos/KUZ_1300-mobile@2x.webp 2x">
+
+            <source srcset="img/photos/KUZ_1300@1x.jpg 1x, img/photos/KUZ_1300@2x.jpg 2x" media="(min-width: 768px)">
+            <img src="img/photos/KUZ_1300-mobile@1x.jpg" srcset="img/photos/KUZ_1300-mobile@2x.jpg 2x"
+              alt="Веб-дизайн и разработка">
+          </picture>
+        </div>
+        <div class="article__content">
+          <p class="article__text">Уникальность мастерской заключается в возможности подготовки специалистов, способных
+            разрабатывать веб-приложения разной
+            степени сложности, от персонального сайта до портала предприятия. Для этой цели студенты осваивают
+            компетенции как в
+            области веб-технологий, так и в сфере графического дизайна.</p>
+          <p class="article__text">Оснащение мастерской используется для развития следующих компетенций:</p>
+          <ul class="article__list">
+            <li class="article__list-item">создания, использования и оптимизирования изображения для веб-сайтов;</li>
+            <li class="article__list-item">выбора дизайнерского решение, которое будет наиболее подходящим для целевого
+              рынка;</li>
+            <li class="article__list-item">программирования на стороне клиента;</li>
+            <li class="article__list-item">программирование на стороне сервера;</li>
+            <li class="article__list-item">установки, настройки и обновления системы управления контентом;</li>
+            <li class="article__list-item">установки, настройки и обновления плагинов/модулей CMS;</li>
+            <li class="article__list-item">создания пользовательских тем/шаблонов для системы управления контентом.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="article article--buisnes-dev" id="section-buisnes-dev">
+      <div class="article__wrapper container">
+        <h2 class="article__title">Программные решения для бизнеса</h2>
+        <div class="article__picture">
+          <picture>
+            <source type="image/webp" srcset="img/photos/KUZ_1304@1x.webp 1x, img/photos/KUZ_1304@2x.webp 2x"
+              media="(min-width: 768px)">
+            <source type="image/webp"
+              srcset="img/photos/KUZ_1304-mobile@1x.webp 1x, img/photos/KUZ_1304-mobile@2x.webp 2x">
+
+            <source srcset="img/photos/KUZ_1304@1x.jpg 1x, img/photos/KUZ_1304@2x.jpg 2x" media="(min-width: 768px)">
+            <img src="img/photos/KUZ_1304-mobile@1x.jpg" srcset="img/photos/KUZ_1304-mobile@2x.jpg 2x"
+              alt="Программные решения для бизнеса">
+          </picture>
+        </div>
+        <div class="article__content">
+          <p class="article__text">В мастерской отрабатываются навыки решения задач в области индивидуальной разработки
+            или персонализации программных
+            решений, управления системами. Студенты, с использованием установленного программного обеспечения,
+            осуществляют
+            бизнес-аналитику для предоставления решений, упрощающих и автоматизирующих рутинные офисные и
+            бизнес-процессы;
+            овладевают компетенциями по обучению пользователей применению прикладных программ.</p>
+          <p class="article__text">Оснащение мастерской используется для развития следующих компетенций:</p>
+          <ul class="article__list">
+            <li class="article__list-item">анализа и проектирования программных решений;</li>
+            <li class="article__list-item">использования системы управления базами данных для построения, хранения и
+              управления данными для требуемой системы
+              (MySQL или MS SQL Server);</li>
+            <li class="article__list-item">изменения существующих кодов и написания нового кода "клиент-сервер" на базе
+              программного обеспечения (.NET или Java);</li>
+            <li class="article__list-item">определения и интегрирования соответствующих библиотек и Фреймворков в
+              программное решение;</li>
+            <li class="article__list-item">строительства многоуровневые приложения;</li>
+            <li class="article__list-item">разработки мобильного интерфейса для клиента на основе серверной системы;
+            </li>
+            <li class="article__list-item">составления плана тестирования; разработки тест-кейсов и проверки результатов
+              тест- кейсов;</li>
+            <li class="article__list-item">устранения и исправления ошибок; составления отчета о процессе тестирования;
+            </li>
+            <li class="article__list-item">разработки однопользовательских и высоконагруженных программных решений.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="page-footer">
+    <div class="page-footer__wrapper container">
+      <div class="page-footer__contacts contacts contacts--in-footer">
+        <a class="contacts__item" href="mailto:centrit@spospk.ru">
+          <svg class="contacts__icon" width="20" height="20" xmlns="http://www.w3.org/2000/svg" fill="#ffffff"
+            viewBox="0 0 20 20">
+            <path
+              d="M16.563 3.125H3.438A2.19 2.19 0 001.25 5.313v9.375a2.19 2.19 0 002.188 2.187h13.124a2.19 2.19 0 002.188-2.188V5.313a2.19 2.19 0 00-2.188-2.188zm-.554 3.618l-5.625 4.375a.625.625 0 01-.768 0L3.991 6.743a.625.625 0 11.768-.986L10 9.833l5.241-4.076a.625.625 0 01.768.986z" />
+          </svg>
+          <span>centrit@spospk.ru</span>
+        </a>
+        <a class="contacts__item" href="tel:+73823780379">
+          <svg class="contacts__icon" xmlns="http://www.w3.org/2000/svg" fill="#ffffff" viewBox="0 0 20 20" width="20"
+            height="20">
+            <path
+              d="M15.273 18.75c-.762 0-1.833-.276-3.437-1.172-1.95-1.093-3.46-2.103-5.399-4.038-1.87-1.87-2.78-3.08-4.054-5.397-1.44-2.617-1.194-3.99-.92-4.576.327-.7.809-1.12 1.432-1.536.354-.231.728-.43 1.119-.593l.107-.048c.194-.087.487-.218.858-.078.248.093.469.283.815.625.71.7 1.68 2.26 2.037 3.025.24.516.4.856.4 1.239 0 .447-.225.792-.498 1.164-.051.07-.102.137-.151.202-.298.39-.363.503-.32.705.087.405.737 1.61 1.804 2.676 1.068 1.065 2.239 1.674 2.646 1.76.21.045.325-.023.728-.33.058-.045.117-.09.18-.136.416-.31.745-.529 1.182-.529h.002c.38 0 .705.165 1.244.437.704.354 2.31 1.312 3.014 2.022.342.346.533.566.627.813.14.373.008.664-.079.86l-.047.107c-.164.39-.364.763-.597 1.117-.415.62-.836 1.101-1.538 1.428-.361.171-.756.257-1.155.253z" />
+          </svg>
+          <span>+7&nbsp;(3823)&nbsp;780-379</span>
+        </a>
+        <a class="contacts__item" href="https://yandex.ru/maps/-/CCQ3mGspCC" target="_blank">
+          <svg class="contacts__icon" xmlns="http://www.w3.org/2000/svg" fill="#ffffff" viewBox="0 0 20 20" width="20"
+            height="20">
+            <path d="M10 8.75a1.25 1.25 0 100-2.5 1.25 1.25 0 000 2.5z" />
+            <path
+              d="M10 1.25c-3.446 0-6.25 2.682-6.25 5.977 0 1.569.715 3.655 2.126 6.202C7.009 15.473 8.319 17.322 9 18.242a1.24 1.24 0 002 0c.681-.92 1.993-2.769 3.126-4.813 1.408-2.546 2.123-4.633 2.123-6.202 0-3.295-2.804-5.977-6.25-5.977zM10 10a2.5 2.5 0 110-5 2.5 2.5 0 010 5z" />
+          </svg>
+          <span>г.Северск, ул.Строителей&nbsp;25, каб.&nbsp;317</span>
+        </a>
+        <p class="contacts__item">
+          <svg class="contacts__icon" xmlns="http://www.w3.org/2000/svg" fill="#ffffff" viewBox="0 0 20 20" width="20"
+            height="20">
+            <path
+              d="M10 1.875a8.125 8.125 0 100 16.25 8.125 8.125 0 000-16.25zm3.75 9.375H10a.625.625 0 01-.625-.625V5a.625.625 0 011.25 0v5h3.125a.624.624 0 110 1.25z" />
+          </svg>
+          <span class="contacts__work-time">
+            Время работы: ПН-ВС с 08:00 до 21:00
+          </span>
+        </p>
+      </div>
+      <div class="page-footer__social social">
+        <p class="social__subtitle">Мы в соцсетях</p>
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--vk" href="http://vk.com/spospk" target="_blank">
+              <span class="visually-hidden">Страница во Вконтакте</span>
+              <svg class="social__icon" xmlns="http://www.w3.org/2000/svg" fill="#ffffff" viewBox="0 0 20 20">
+                <path fill-rule="evenodd"
+                  d="M18.934 5.156c.139-.44 0-.76-.616-.76h-2.045c-.516 0-.755.28-.894.58 0 0-1.052 2.562-2.522 4.224-.476.48-.694.64-.953.64-.139 0-.318-.16-.318-.6V5.136c0-.52-.158-.761-.595-.761H7.773a.495.495 0 00-.516.48c0 .5.735.621.814 2.022v3.045c0 .66-.117.781-.377.781-.695 0-2.383-2.582-3.396-5.525-.196-.583-.396-.803-.913-.803H1.32c-.596 0-.695.28-.695.58 0 .541.695 3.263 3.237 6.867 1.688 2.46 4.09 3.783 6.255 3.783 1.31 0 1.47-.3 1.47-.8v-1.862c0-.6.119-.7.536-.7.297 0 .834.159 2.045 1.34 1.39 1.401 1.628 2.042 2.403 2.042h2.045c.596 0 .874-.3.715-.88-.179-.581-.854-1.422-1.728-2.423-.476-.56-1.191-1.18-1.41-1.481-.297-.4-.218-.56 0-.92-.02 0 2.483-3.564 2.74-4.766"
+                  clip-rule="evenodd" />
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--fb" href="https://www.facebook.com/SPOSPK" target="_blank">
+              <span class="visually-hidden">Страница в Фейсбуке</span>
+              <svg class="social__icon" xmlns="http://www.w3.org/2000/svg" fill="#ffffff" viewBox="0 0 20 20" width="20"
+                height="20">
+                <path fill-rule="evenodd"
+                  d="M18.75 10.053a8.75 8.75 0 10-10.117 8.644v-6.114H6.41v-2.53h2.222V8.125c0-2.193 1.306-3.405 3.305-3.405.957 0 1.959.171 1.959.171v2.154h-1.104c-1.086 0-1.426.674-1.426 1.367v1.641h2.426l-.387 2.53h-2.04v6.115a8.752 8.752 0 007.384-8.645z"
+                  clip-rule="evenodd" />
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--tw" href="https://twitter.com/spospk" target="_blank">
+              <span class="visually-hidden">Страница в Твиттере</span>
+              <svg class="social__icon" xmlns="http://www.w3.org/2000/svg" fill="#ffffff" viewBox="0 0 20 20" width="20"
+                height="20">
+                <path
+                  d="M19.375 4.277a7.882 7.882 0 01-2.209.598 3.809 3.809 0 001.693-2.094 7.724 7.724 0 01-2.444.918 3.872 3.872 0 00-2.81-1.199C11.48 2.5 9.76 4.195 9.76 6.285c-.002.29.032.58.099.863a10.965 10.965 0 01-7.93-3.957 3.738 3.738 0 00-.523 1.903c0 1.312.685 2.472 1.719 3.152a3.809 3.809 0 01-1.75-.473v.047c0 1.836 1.329 3.364 3.087 3.711-.33.088-.671.133-1.014.133-.242 0-.485-.023-.723-.07.49 1.504 1.911 2.597 3.596 2.629a7.797 7.797 0 01-5.696 1.566A10.886 10.886 0 006.513 17.5c7.085 0 10.955-5.77 10.955-10.773 0-.164-.004-.329-.012-.489a7.752 7.752 0 001.919-1.96z" />
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--yt" href="http://www.youtube.com/user/SPOSPK/" target="_blank">
+              <span class="visually-hidden">Канал на Ютубе</span>
+              <svg class="social__icon" xmlns="http://www.w3.org/2000/svg" fill="#fff" viewBox="0 0 20 20" width="20"
+                height="20">
+                <g clip-path="url(#clip0)">
+                  <path
+                    d="M19.869 5.812c0-1.758-1.293-3.172-2.89-3.172-2.165-.1-4.372-.14-6.627-.14h-.704c-2.25 0-4.46.04-6.625.14C1.43 2.64.137 4.063.137 5.82A58.11 58.11 0 000 9.992c-.004 1.39.04 2.782.133 4.176 0 1.757 1.293 3.183 2.887 3.183 2.273.106 4.605.152 6.976.149 2.375.007 4.7-.042 6.977-.149 1.597 0 2.89-1.426 2.89-3.183.094-1.395.137-2.786.133-4.18a56.793 56.793 0 00-.127-4.176zM8.086 13.824V6.148l5.664 3.836-5.664 3.84z" />
+                </g>
+                <defs>
+                  <clipPath id="clip0">
+                    <path fill="#fff" d="M0 0h20v20H0z" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="page-footer__copyright copyright">
+        <h2 class="copyright__title">Разработал:</h2>
+        <a class="copyright__author" href="https://vk.com/1maximsafronov" target="_blank">Сафронов Максим</a>
+      </div>
+    </div>
+  </footer>
+  <a class="to-top-btn" href="#page-header">
+    <span class="visually-hidden">На верх</span>
+  </a>
+  <script src="js/script.js"></script>
 </body>
 
 </html>

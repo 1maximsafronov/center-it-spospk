@@ -1,0 +1,129 @@
+
+.workshop {
+  position: relative;
+
+  display: flex;
+  align-items: stretch;
+
+  color: #263042;
+
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px -10px rgba(0, 0, 0, 0.5);
+
+  transition: box-shadow 0.3s, transform 0.3s, color 0.3s;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 0;
+    z-index: 0;
+
+    width: 120px;
+    height: 120px;
+
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: cover;
+    transform: translateY(-50%);
+    opacity: 0.1;
+  }
+
+  &--mobile-dev {
+    &::before {
+      background-image: url("../img/mobile-app-icon.svg");
+    }
+  }
+
+  &--1c-dev {
+    &::before {
+      background-image: url("../img/progress-icon.svg");
+    }
+  }
+
+  &--game-dev {
+    &::before {
+      background-image: url("../img/3d-modeling-icon.svg");
+    }
+  }
+
+  &--web-dev {
+    &::before {
+      background-image: url("../img/coding-icon.svg");
+    }
+  }
+
+  &--buisnes-dev {
+    &::before {
+      background-image: url("../img/coding-icon.svg");
+    }
+  }
+
+  &:hover,
+  &:focus {
+    color: #007bff;
+
+    box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.5);
+    transform: translateY(-5px);
+  }
+
+  &:active {
+    box-shadow: inset 0 0 5px 0 rgba(0, 0, 0, 0.8);
+    transform: translateY(5px);
+  }
+}
+
+.workshop__link {
+  position: relative;
+  z-index: 1;
+
+  display: flex;
+  align-items: center;
+  width: 100%;
+  min-height: 100%;
+  padding-top: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+
+  color: inherit;
+  text-decoration: none;
+}
+
+.workshop__title {
+  margin: 0;
+
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+@media (min-width: 768px) {
+  .workshop {
+    &::before {
+      right: 15px;
+
+      width: 70px;
+      height: 70px;
+
+      opacity: 0.5;
+    }
+  }
+
+  .workshop__link {
+    padding-right: 100px;
+  }
+}
+
+@media (min-width: 1140px) {
+  .workshop {
+    &::before {
+      right: 40px;
+    }
+  }
+
+  .workshop__link {
+    padding-right: 145px;
+  }
+}

@@ -1,3 +1,17 @@
-h1 {
-  color: red;
-}
+@import "normalize";
+@import "blocks/global.scss";
+@import "blocks/visually-hidden.scss";
+@import "blocks/container.scss";
+@import "blocks/page-header.scss";
+@import "blocks/main-nav.scss";
+@import "blocks/site-nav.scss";
+@import "blocks/workshops.scss";
+@import "blocks/workshop.scss";
+@import "blocks/news.scss";
+@import "blocks/item-news.scss";
+@import "blocks/article.scss";
+@import "blocks/page-footer.scss";
+@import "blocks/social.scss";
+@import "blocks/copyright.scss";
+@import "blocks/contacts.scss";
+@import "blocks/to-top-btn.scss";
