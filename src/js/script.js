@@ -5,6 +5,9 @@ var navStartPosition = mainNav.offsetTop;
 var navControlBtn = mainNav.querySelector('.main-nav__control');
 var ancors = document.querySelectorAll('a[href*="#"]');
 var toTopBtn = document.querySelector('.to-top-btn');
+var modals = document.querySelectorAll('.modal');
+var mapLinks = document.querySelectorAll('.contacts__item--map');
+var mapModal = document.querySelector('.modal--map');
 
 mainNav.classList.add('main-nav--closed');
 
@@ -50,6 +53,33 @@ function setSmoothScroll(ancor) {
   });
 }
 
+function setMapCickHandler(mapLink) {
+  mapLink.addEventListener('click', function (evt) {
+    evt.preventDefault();
+    openModal(mapModal);
+  });
+}
+
+function openModal(modal) {
+  modal.classList.add('modal--show');
+}
+
+function setCloseModalHandler(modalElement) {
+  var modalCloseBtn = modalElement.querySelector('.modal__close-btn');
+  modalCloseBtn.addEventListener('click', function (event) {
+    event.preventDefault();
+    modalElement.classList.remove('modal--show');
+  });
+}
+
 for (var i = 0; i < ancors.length; i++) {
   setSmoothScroll(ancors[i]);
+}
+
+for (var j = 0; j < mapLinks.length; j++) {
+  setMapCickHandler(mapLinks[j]);
+}
+
+for (var k = 0; k < modals.length; k++) {
+  setCloseModalHandler(modals[k]);
 }

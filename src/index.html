@@ -50,7 +50,7 @@
           </svg>
           <span>+7&nbsp;(3823)&nbsp;780-379</span>
         </a>
-        <a class="contacts__item" href="https://yandex.ru/maps/-/CCQ3mGspCC" target="_blank">
+        <a class="contacts__item contacts__item--map" href="https://yandex.ru/maps/-/CCQ3mGspCC" target="_blank">
           <svg class="contacts__icon" xmlns="http://www.w3.org/2000/svg" fill="#ffffff" viewBox="0 0 20 20" width="20"
             height="20">
             <path d="M10 8.75a1.25 1.25 0 100-2.5 1.25 1.25 0 000 2.5z" />
@@ -449,7 +449,7 @@
           </svg>
           <span>+7&nbsp;(3823)&nbsp;780-379</span>
         </a>
-        <a class="contacts__item" href="https://yandex.ru/maps/-/CCQ3mGspCC" target="_blank">
+        <a class="contacts__item contacts__item--map" href="https://yandex.ru/maps/-/CCQ3mGspCC" target="_blank">
           <svg class="contacts__icon" xmlns="http://www.w3.org/2000/svg" fill="#ffffff" viewBox="0 0 20 20" width="20"
             height="20">
             <path d="M10 8.75a1.25 1.25 0 100-2.5 1.25 1.25 0 000 2.5z" />
@@ -528,6 +528,32 @@
       </div>
     </div>
   </footer>
+  <div class="modal modal--map">
+    <div class="modal__wrapper">
+      <button class="modal__close-btn">
+        <svg class="modal__close-icon" width="30" height="30" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+          <path
+            d="M256 48C141.31 48 48 141.31 48 256s93.31 208 208 208 208-93.31 208-208S370.69 48 256 48zm75.31 260.69a16 16 0 11-22.62 22.62L256 278.63l-52.69 52.68a16 16 0 01-22.62-22.62L233.37 256l-52.68-52.69a16 16 0 0122.62-22.62L256 233.37l52.69-52.68a16 16 0 0122.62 22.62L278.63 256z" />
+        </svg>
+        <span class="visually-hidden">Закрыть</span>
+      </button>
+      <div class="modal__map" style="position: relative;
+  overflow: hidden;">
+        <a href="https://yandex.ru/maps/org/tsentr_razvitiya_kompetentsiy_v_oblasti_informatsionnykh_tekhnologiy/99703238714/?utm_medium=mapframe&utm_source=maps"
+          style="color: #eeeeee;
+  font-size: 12px;
+  position: absolute;
+  top: 0;">Центр Развития Компетенций в области Информационных
+          Технологий</a><a
+          href="https://yandex.ru/maps/11351/seversk/category/college/?utm_medium=mapframe&utm_source=maps" style="color: #eeeeee;
+  font-size: 12px;
+  position: absolute;
+  top: 14px;">Колледж в Северске</a>
+        <iframe class="modal__map-frame" src="https://yandex.ru/map-widget/v1/-/CCQ3q6dd0C" width="560" height="400"
+          frameborder="1" allowfullscreen="true" style="position: relative;"></iframe>
+      </div>
+    </div>
+  </div>
   <a class="to-top-btn" href="#page-header">
     <span class="visually-hidden">На верх</span>
   </a>
